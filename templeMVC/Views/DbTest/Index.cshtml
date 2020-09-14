@@ -1,0 +1,41 @@
+﻿@using templeMVC.Models;
+@{
+    Layout = null;
+    List<Member> members = ViewBag.members;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<table class="table">
+    <thead>
+        <tr>
+            <th>資料庫編號</th>
+            <th>角色名稱</th>
+            <th>電話</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (Member member in members) {
+            <tr>
+                <th>@member.ID</th>
+                <th>@member.name</th>
+                <th>@member.number</th>
+                <th><th>
+            </tr>
+         }
+
+    </tbody>
+</table>
+<p>
+    @Html.ActionLink("新增資料","CreatedMember")
+</p>
+</body>
+</html>

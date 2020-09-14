@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DbTestController.cs" />
     <Compile Include="Controllers\FortestController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MVCController.cs" />
@@ -127,6 +128,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DBmanager.cs" />
+    <Compile Include="Models\member.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -237,10 +240,11 @@
     <Content Include="template1Style\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="template1Style\assets\fonts\FontAwesome.otf" />
     <Content Include="shared\_Header.cshtml" />
+    <Content Include="Views\DbTest\CreateMember.cshtml" />
+    <Content Include="Views\DbTest\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
